@@ -49,10 +49,12 @@ img{display:block;width:100%}
 .hero-map svg{width:100%;height:100%}
 .contours path{
   fill:none;stroke:rgba(216,185,163,.13);stroke-width:1.1;
+  filter:url(#sketch);
 }
 .route-line path{
   fill:none;stroke:var(--rust2);stroke-width:2.2;stroke-dasharray:8 12;
   animation:dash 18s linear infinite;
+  filter:url(#sketch);
 }
 .route-points circle{fill:var(--sand)}
 @keyframes dash{to{stroke-dashoffset:-500}}
@@ -113,21 +115,22 @@ img{display:block;width:100%}
 .section-title.light h2{color:var(--ink)}
 .work-map{
   position:relative;min-height:1280px;display:grid;grid-template-columns:repeat(12,1fr);
-  grid-template-rows:repeat(12,90px);gap:18px;
+  grid-template-rows:repeat(12,minmax(90px,auto));gap:18px;
 }
 .work-route{
   position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:0;
 }
 .work-route path{
   fill:none;stroke:rgba(199,118,89,.35);stroke-width:2;stroke-dasharray:7 13;
+  filter:url(#sketch);
 }
 .project{
-  position:relative;z-index:1;border:1px solid var(--line);border-radius:26px;overflow:hidden;
+  position:relative;z-index:1;border:1px solid var(--line);border-radius:26px;
   background:rgba(21,22,25,.86);box-shadow:0 24px 60px rgba(0,0,0,.25);
   transition:transform .25s ease,border-color .25s ease;
 }
 .project:hover{transform:translateY(-6px);border-color:var(--line2)}
-.project-media{background:#0d0e10}
+.project-media{background:#0d0e10;border-radius:26px 26px 0 0;overflow:hidden}
 .project-copy{padding:24px}
 .project-no{
   font-family:"IBM Plex Mono",monospace;font-size:.65rem;letter-spacing:.15em;color:var(--sand);
@@ -156,10 +159,11 @@ img{display:block;width:100%}
 }
 .route-visual{position:sticky;top:110px;height:760px}
 .route-visual svg{width:100%;height:100%}
-.route-bg{fill:none;stroke:rgba(243,232,222,.15);stroke-width:5}
+.route-bg{fill:none;stroke:rgba(243,232,222,.15);stroke-width:5;filter:url(#sketch);}
 .route-progress{
   fill:none;stroke:var(--rust2);stroke-width:5;stroke-linecap:round;
   stroke-dasharray:1800;stroke-dashoffset:1800;transition:stroke-dashoffset .8s ease;
+  filter:url(#sketch);
 }
 .node{fill:#0b0c0e;stroke:var(--line2);stroke-width:4;transition:.3s ease}
 .node.active{fill:var(--rust2);stroke:var(--sand);transform:scale(1.25);transform-origin:center}
@@ -177,10 +181,12 @@ img{display:block;width:100%}
 .exp-role{font-size:1.3rem;font-weight:700;letter-spacing:-.03em}
 .exp-toggle{font-size:1.7rem;text-align:right;color:var(--rust2)}
 .exp-body{
-  max-height:0;overflow:hidden;transition:max-height .45s ease,padding .45s ease;
-  padding:0 0;
+  display:grid;grid-template-rows:0fr;overflow:hidden;
+  transition:grid-template-rows .45s ease;
 }
-.exp-item.open .exp-body{max-height:260px;padding:0 0 28px 170px}
+.exp-item.open .exp-body{grid-template-rows:1fr}
+.exp-body-inner{overflow:hidden;padding:0 0 0 170px}
+.exp-item.open .exp-body-inner{padding-bottom:28px}
 .company{
   margin:0 0 10px;font-family:"IBM Plex Mono",monospace;color:var(--sand);font-size:.75rem;
 }
@@ -211,7 +217,7 @@ img{display:block;width:100%}
   background:var(--rust);
 }
 .contact-contours{position:absolute;inset:0;width:100%;height:100%}
-.contact-contours path{fill:none;stroke:rgba(243,232,222,.16);stroke-width:1.4}
+.contact-contours path{fill:none;stroke:rgba(243,232,222,.16);stroke-width:1.4;filter:url(#sketch);}
 .contact-inner{position:relative;z-index:2}
 .contact-small{
   font-family:"IBM Plex Mono",monospace;font-size:.72rem;letter-spacing:.14em;color:#f6d8c8;
@@ -243,8 +249,29 @@ footer{
   .work-map{grid-template-columns:1fr}
   .exp-head{grid-template-columns:1fr 36px}
   .exp-date{grid-column:1/-1}
-  .exp-item.open .exp-body{padding-left:0}
+  .exp-body-inner{padding-left:0}
   .skills-grid{grid-template-columns:1fr}
   .route-visual{height:420px}
   footer{flex-direction:column;gap:10px}
+}
+
+/* ---------------- ABOUT ---------------- */
+.about-me{padding:60px 5vw 120px}
+.about-layout{display:grid;grid-template-columns:1.3fr .7fr;gap:60px;align-items:start}
+.about-text .lead{font-size:1.3rem;line-height:1.5;margin:0 0 22px;letter-spacing:-.01em}
+.about-text p{margin:0 0 16px;color:var(--muted);line-height:1.65;max-width:62ch}
+.about-tags{align-content:flex-start;padding-top:6px}
+.about-tags span{font-size:.7rem}
+@media(max-width:1100px){
+  .about-layout{grid-template-columns:1fr}
+}
+
+/* ---------------- ACCESSIBILITY: reduced motion & focus ---------------- */
+:focus-visible{outline:2px solid var(--rust2);outline-offset:3px;border-radius:4px}
+
+@media (prefers-reduced-motion: reduce){
+  html{scroll-behavior:auto}
+  .route-line path{animation:none}
+  .skills-track{animation:none}
+  .project,.exp-body,.node,.route-progress{transition:none}
 }
