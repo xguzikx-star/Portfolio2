@@ -13,3 +13,13 @@ function activateItem(item) {
 items.forEach(item => {
   item.querySelector(".exp-head").addEventListener("click", () => activateItem(item));
 });
+
+// Category tiles (Web design / Branding / Teksty / Social media) toggle independently
+const cats = document.querySelectorAll(".cat-item");
+cats.forEach(cat => {
+  cat.querySelector(".cat-head").addEventListener("click", () => {
+    const open = !cat.classList.contains("open");
+    cat.classList.toggle("open", open);
+    cat.querySelector(".cat-toggle").textContent = open ? "−" : "+";
+  });
+});
