@@ -14,15 +14,25 @@
 <body>
   <div class="noise"></div>
 
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <filter id="sketch" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="2" seed="7" result="noise"/>
+        <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+
   <header class="topbar">
     <a href="#top" class="logo">MK<span>°</span></a>
     <nav>
-      <a href="#map">MAP</a>
-      <a href="#work">WORK</a>
-      <a href="#route">ROUTE</a>
-      <a href="#contact">CONTACT</a>
+      <a href="#map">MAPA</a>
+      <a href="#work">PRACA</a>
+      <a href="#about">O MNIE</a>
+      <a href="#route">TRASA</a>
+      <a href="#contact">KONTAKT</a>
     </nav>
-    <a class="mail-link" href="mailto:malgorzata.klimczuk@gmail.com">EMAIL ↗</a>
+    <a class="mail-link" href="mailto:malgorzata.klimczuk@gmail.com">NAPISZ ↗</a>
   </header>
 
   <main id="top">
@@ -51,18 +61,18 @@
 
       <div class="hero-grid">
         <div class="hero-copy">
-          <p class="kicker">DIGITAL MARKETING / WEB / CONTENT</p>
+          <p class="kicker">MARKETING CYFROWY / WWW / CONTENT</p>
           <h1>
-            PROJECTS
-            <span>WITH DIRECTION.</span>
+            PROJEKTY
+            <span>Z KIERUNKIEM.</span>
           </h1>
           <p class="lead">
             Projektuję strony, treści i komunikację tak, żeby marka nie krążyła w kółko.
             Łączę strategię, design i wdrożenie w jeden czytelny kierunek.
           </p>
           <div class="hero-actions">
-            <a class="cta solid" href="#work">EXPLORE WORK ↓</a>
-            <a class="cta ghost" href="#route">SEE THE ROUTE</a>
+            <a class="cta solid" href="#work">ZOBACZ PROJEKTY ↓</a>
+            <a class="cta ghost" href="#route">ZOBACZ TRASĘ</a>
           </div>
         </div>
 
@@ -71,21 +81,21 @@
             <img src="assets/gosia-portrait.png" alt="Małgorzata Klimczuk">
           </div>
           <div class="portrait-label label-a">KRAKÓW / PL</div>
-          <div class="portrait-label label-b">REMOTE / HYBRID</div>
-          <div class="portrait-label label-c">AVAILABLE</div>
+          <div class="portrait-label label-b">ZDALNIE / HYBRYDOWO</div>
+          <div class="portrait-label label-c">DOSTĘPNA</div>
         </div>
       </div>
 
       <div class="hero-index">
         <span>01</span>
-        <span>MAP / INTRO</span>
+        <span>MAPA / WSTĘP</span>
       </div>
     </section>
 
     <section class="work" id="work">
       <div class="section-title">
         <span>02</span>
-        <h2>Selected work</h2>
+        <h2>Wybrane projekty</h2>
       </div>
 
       <div class="work-map">
@@ -103,7 +113,7 @@
           </div>
           <div class="project-copy">
             <span class="project-no">01</span>
-            <h3>HRscore website system</h3>
+            <h3>System strony HRscore</h3>
             <p>Strona, baza wiedzy, landing page’e i spójna architektura treści dla marki eksperckiej B2B.</p>
             <div class="chips"><span>WordPress</span><span>Elementor</span><span>UX</span><span>Content</span></div>
           </div>
@@ -115,7 +125,7 @@
           </div>
           <div class="project-copy">
             <span class="project-no">02</span>
-            <h3>Rotation cost funnel</h3>
+            <h3>Lejek: koszty rotacji</h3>
             <p>Landing page, formularz, komunikacja e-mail i kwalifikacja leadów.</p>
             <div class="chips"><span>Lead gen</span><span>MailerLite</span><span>ScoreApp</span></div>
           </div>
@@ -127,7 +137,7 @@
           </div>
           <div class="project-copy">
             <span class="project-no">03</span>
-            <h3>Two brands, one system</h3>
+            <h3>Dwie marki, jeden system</h3>
             <p>Identyfikacja, tone of voice, materiały marketingowe i komunikacja HRscore oraz CSP.</p>
             <div class="chips"><span>Branding</span><span>Copywriting</span><span>Design</span></div>
           </div>
@@ -139,7 +149,7 @@
           </div>
           <div class="project-copy">
             <span class="project-no">04</span>
-            <h3>Knowledge base</h3>
+            <h3>Baza wiedzy</h3>
             <p>Strategia contentowa, pillar pages i rozbudowa eksperckiej bazy wiedzy.</p>
             <div class="chips"><span>SEO</span><span>Content strategy</span><span>UX writing</span></div>
           </div>
@@ -147,10 +157,27 @@
       </div>
     </section>
 
+    <section class="about-me" id="about">
+      <div class="section-title">
+        <span>03</span>
+        <h2>O mnie</h2>
+      </div>
+
+      <div class="about-layout">
+        <div class="about-text">
+          <p class="lead">Marketing traktuję jak rzemiosło. Z wykształcenia jestem edytorką (filologia polska, edytorstwo) — i chyba stąd bierze się to, jak bardzo zależy mi na tym, żeby treść i struktura miały sens, nie tylko dobrze wyglądały.</p>
+          <p>Poza pracą ręcznie rysuję mapy światów fantasy — w tym, w pewnym sensie, tę, po której poruszasz się na tej stronie. Kontury i trasy, które widziałaś/eś wyżej, zanim trafiły do przeglądarki, zaczynały się od ołówka i kalki.</p>
+        </div>
+        <div class="chips about-tags">
+          <span>Marketing B2B</span><span>Content</span><span>WordPress</span><span>Employer Branding</span>
+        </div>
+      </div>
+    </section>
+
     <section class="route-section" id="route">
       <div class="section-title light">
-        <span>03</span>
-        <h2>Experience route</h2>
+        <span>04</span>
+        <h2>Trasa doświadczenia</h2>
       </div>
 
       <div class="route-layout">
@@ -177,11 +204,11 @@
               <span class="exp-role">Specjalistka ds. Marketingu i Employer Brandingu</span>
               <span class="exp-toggle">−</span>
             </button>
-            <div class="exp-body">
+            <div class="exp-body"><div class="exp-body-inner">
               <p class="company">Telekadra Poland / HRscore</p>
               <p>Rozwój stron, landing page’y, content, e-mail marketing, lead generation, employer branding i komunikacja dwóch marek.</p>
               <div class="exp-tags"><span>WEB</span><span>CONTENT</span><span>BRAND</span></div>
-            </div>
+            </div></div>
           </article>
 
           <article class="exp-item" data-node="n3">
@@ -190,11 +217,11 @@
               <span class="exp-role">Specjalistka ds. HR</span>
               <span class="exp-toggle">+</span>
             </button>
-            <div class="exp-body">
+            <div class="exp-body"><div class="exp-body-inner">
               <p class="company">Telekadra Tetłak &amp; Radłowski</p>
               <p>Onboarding, offboarding, komunikacja wewnętrzna, employer branding i działania wspierające zaangażowanie.</p>
               <div class="exp-tags"><span>HR</span><span>EB</span><span>COMMS</span></div>
-            </div>
+            </div></div>
           </article>
 
           <article class="exp-item" data-node="n2">
@@ -203,11 +230,11 @@
               <span class="exp-role">Specjalistka ds. Marketingu</span>
               <span class="exp-toggle">+</span>
             </button>
-            <div class="exp-body">
+            <div class="exp-body"><div class="exp-body-inner">
               <p class="company">Telekadra</p>
               <p>Kampanie marketingowe, strony WWW, social media, materiały promocyjne i analiza rynku.</p>
               <div class="exp-tags"><span>CAMPAIGNS</span><span>WWW</span><span>SOCIAL</span></div>
-            </div>
+            </div></div>
           </article>
 
           <article class="exp-item" data-node="n1">
@@ -216,11 +243,11 @@
               <span class="exp-role">Asystentka ds. Kadr i Administracji</span>
               <span class="exp-toggle">+</span>
             </button>
-            <div class="exp-body">
+            <div class="exp-body"><div class="exp-body-inner">
               <p class="company">Telekadra</p>
               <p>Wsparcie procesów administracyjnych, rekrutacyjnych i przygotowanie materiałów employer brandingowych.</p>
               <div class="exp-tags"><span>ADMIN</span><span>HR</span><span>PRINT</span></div>
-            </div>
+            </div></div>
           </article>
         </div>
       </div>
@@ -228,11 +255,11 @@
 
     <section class="skills">
       <div class="section-title">
-        <span>04</span>
-        <h2>Capabilities</h2>
+        <span>05</span>
+        <h2>Kompetencje</h2>
       </div>
 
-      <div class="skills-marquee">
+      <div class="skills-marquee" aria-hidden="true">
         <div class="skills-track">
           <span>WORDPRESS</span><span>ELEMENTOR</span><span>CONTENT</span><span>EMAIL MARKETING</span>
           <span>LEAD GENERATION</span><span>EMPLOYER BRANDING</span><span>COPYWRITING</span><span>CLARITY</span>
@@ -251,11 +278,11 @@
           <p>Content, lead generation, e-mail marketing, komunikacja B2B i działania wspierające sprzedaż.</p>
         </article>
         <article>
-          <h3>BRAND</h3>
+          <h3>MARKA</h3>
           <p>Employer branding, copywriting, komunikacja wewnętrzna, identyfikacja i materiały marketingowe.</p>
         </article>
         <article>
-          <h3>ANALYSIS</h3>
+          <h3>ANALITYKA</h3>
           <p>GA4 na poziomie podstawowym, Microsoft Clarity, Senuto i rekomendacje optymalizacyjne.</p>
         </article>
       </div>
@@ -269,8 +296,8 @@
         <path d="M0 480 C310 350, 580 390, 830 540 S1250 680, 1680 470"/>
       </svg>
       <div class="contact-inner">
-        <span class="contact-small">LET’S CREATE SOMETHING WITH DIRECTION</span>
-        <h2>Need a route?<br>Let’s draw one.</h2>
+        <span class="contact-small">STWÓRZMY COŚ Z KIERUNKIEM</span>
+        <h2>Potrzebujesz trasy?<br>Narysujmy ją.</h2>
         <div class="contact-links">
           <a href="mailto:malgorzata.klimczuk@gmail.com">malgorzata.klimczuk@gmail.com ↗</a>
           <a href="tel:+48514254283">+48 514 254 283 ↗</a>
