@@ -4,214 +4,151 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Małgorzata Klimczuk — Portfolio</title>
-  <meta name="description" content="Portfolio Małgorzaty Klimczuk — digital marketing, web, content, employer branding.">
+  <meta name="description" content="Małgorzata Klimczuk — marketing, strony WWW, content, employer branding.">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Syne:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <script defer src="script.js"></script>
 </head>
 <body>
-  <div class="noise"></div>
-
-  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
-    <defs>
-      <filter id="sketch" x="-20%" y="-20%" width="140%" height="140%">
-        <feTurbulence type="fractalNoise" baseFrequency="0.012 0.045" numOctaves="2" seed="7" result="noise"/>
-        <feDisplacementMap in="SourceGraphic" in2="noise" scale="7" xChannelSelector="R" yChannelSelector="G"/>
-      </filter>
-    </defs>
-  </svg>
 
   <header class="topbar">
     <a href="#top" class="logo">MK<span>°</span></a>
     <nav>
-      <a href="#map">MAPA</a>
+      <a href="#start">START</a>
       <a href="#work">PRACA</a>
       <a href="#about">O MNIE</a>
-      <a href="#route">TRASA</a>
+      <a href="#exp">DOŚWIADCZENIE</a>
       <a href="#contact">KONTAKT</a>
     </nav>
     <a class="mail-link" href="mailto:malgorzata.klimczuk@gmail.com">NAPISZ ↗</a>
   </header>
 
   <main id="top">
-    <section class="hero" id="map">
-      <div class="hero-map" aria-hidden="true">
-        <svg viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice">
-          <g class="contours">
-            <path d="M-80 170 C170 45, 380 90, 520 210 S820 390, 1040 245 1430 60, 1680 230"/>
-            <path d="M-100 260 C140 120, 360 155, 530 280 S850 470, 1090 315 1430 120, 1700 310"/>
-            <path d="M-120 360 C130 230, 340 245, 550 390 S890 560, 1120 420 1430 240, 1720 430"/>
-            <path d="M-90 470 C160 350, 400 355, 610 500 S930 690, 1180 545 1480 360, 1710 560"/>
-            <path d="M-60 600 C170 470, 430 480, 650 630 S980 810, 1230 660 1500 500, 1710 700"/>
-            <path d="M-40 740 C210 610, 460 620, 690 770 S1020 940, 1280 805 1520 650, 1700 840"/>
-          </g>
-          <g class="route-line">
-            <path id="heroPath" d="M120 760 C280 530, 430 660, 585 480 S860 285, 1050 420 1320 560, 1480 240"/>
-          </g>
-          <g class="route-points">
-            <circle cx="120" cy="760" r="8"/>
-            <circle cx="585" cy="480" r="8"/>
-            <circle cx="1050" cy="420" r="8"/>
-            <circle cx="1480" cy="240" r="8"/>
-          </g>
-        </svg>
-      </div>
 
-      <div class="hero-grid">
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="start">
+      <div class="wrap hero-grid">
         <div class="hero-copy">
-          <p class="kicker">MARKETING CYFROWY / WWW / CONTENT</p>
-          <h1>
-            PROJEKTY
-            <span>Z KIERUNKIEM.</span>
-          </h1>
-          <p class="lead">
-            Projektuję strony, treści i komunikację tak, żeby marka nie krążyła w kółko.
-            Łączę strategię, design i wdrożenie w jeden czytelny kierunek.
-          </p>
+          <p class="kicker">MARKETING / WWW / CONTENT</p>
+          <h1>Jestem po<br>Twojej stronie.<br><span>Dosłownie — robię strony.</span></h1>
+          <p class="lead">Bez lania wody: projektuję strony, piszę treści i ogarniam komunikację marek B2B — od pomysłu po wdrożenie.</p>
           <div class="hero-actions">
-            <a class="cta solid" href="#work">ZOBACZ PROJEKTY ↓</a>
-            <a class="cta ghost" href="#route">ZOBACZ TRASĘ</a>
+            <a class="cta solid" href="#work">Zobacz projekty</a>
+            <a class="cta ghost" href="#exp">Zobacz doświadczenie</a>
           </div>
         </div>
 
         <div class="hero-portrait-wrap">
+          <div class="blob" aria-hidden="true"></div>
           <div class="portrait-mask">
             <img src="assets/gosia-portrait.png" alt="Małgorzata Klimczuk">
           </div>
-          <div class="portrait-label label-a">KRAKÓW / PL</div>
+          <div class="portrait-label label-a">KRAKÓW</div>
           <div class="portrait-label label-b">ZDALNIE / HYBRYDOWO</div>
-          <div class="portrait-label label-c">DOSTĘPNA</div>
+          <div class="portrait-label label-c">DOSTĘPNA OD ZARAZ</div>
         </div>
-      </div>
-
-      <div class="hero-index">
-        <span>01</span>
-        <span>MAPA / WSTĘP</span>
       </div>
     </section>
 
+    <!-- ============ WORK ============ -->
     <section class="work" id="work">
-      <div class="section-title">
-        <span>02</span>
-        <h2>Wybrane projekty</h2>
-      </div>
-
-      <div class="work-map">
-        <svg class="work-route" viewBox="0 0 1400 1200" preserveAspectRatio="none" aria-hidden="true">
-          <path d="M100 140 C360 40, 420 320, 670 270 S980 70, 1250 220
-                   C1380 320, 1130 470, 950 560
-                   S650 690, 420 610
-                   S150 650, 110 900
-                   C90 1020, 260 1110, 430 1070"/>
-        </svg>
-
-        <article class="project p1">
-          <div class="project-media">
-            <img src="assets/project-hrscore.svg" alt="Wizualizacja strony HRscore">
+      <div class="wrap">
+        <div class="section-title">
+          <span>01</span>
+          <div>
+            <h2>Wybrane projekty</h2>
+            <p class="section-sub">Prace, za które nie muszę przepraszać.</p>
           </div>
-          <div class="project-copy">
+        </div>
+
+        <div class="work-grid">
+
+          <article class="project">
+            <div class="project-icon">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="8" y="10" width="48" height="44" rx="4" stroke="#C05B36" stroke-width="2.5"/><line x1="8" y1="22" x2="56" y2="22" stroke="#C05B36" stroke-width="2.5"/><circle cx="16" cy="16" r="1.6" fill="#C05B36"/><circle cx="22" cy="16" r="1.6" fill="#C05B36"/><rect x="16" y="30" width="20" height="5" rx="2.5" fill="#44AD84"/><line x1="16" y1="41" x2="48" y2="41" stroke="#C05B36" stroke-width="1.8" opacity=".6"/><line x1="16" y1="47" x2="38" y2="47" stroke="#C05B36" stroke-width="1.8" opacity=".6"/></svg>
+            </div>
             <span class="project-no">01</span>
-            <h3>System strony HRscore</h3>
-            <p>Strona, baza wiedzy, landing page’e i spójna architektura treści dla marki eksperckiej B2B.</p>
+            <h3>Strona HRscore od zera</h3>
+            <p>Serwis, baza wiedzy i landing page'y dla marki eksperckiej B2B — architektura, treść i wdrożenie w jednych rękach.</p>
             <div class="chips"><span>WordPress</span><span>Elementor</span><span>UX</span><span>Content</span></div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project p2">
-          <div class="project-media">
-            <img src="assets/project-rotation.svg" alt="Wizualizacja kalkulatora rotacji">
-          </div>
-          <div class="project-copy">
+          <article class="project">
+            <div class="project-icon">
+              <svg viewBox="0 0 64 64" fill="none"><path d="M14 44 L26 30 L34 36 L50 16" stroke="#C05B36" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/><circle cx="50" cy="16" r="3" fill="#44AD84"/><path d="M14 50 h36" stroke="#C05B36" stroke-width="2.5" stroke-linecap="round" opacity=".5"/></svg>
+            </div>
             <span class="project-no">02</span>
-            <h3>Lejek: koszty rotacji</h3>
-            <p>Landing page, formularz, komunikacja e-mail i kwalifikacja leadów.</p>
+            <h3>Kalkulator, który liczy się z Tobą</h3>
+            <p>Landing page, formularz i automatyczna komunikacja e-mail — kompletna ścieżka od kliknięcia po kwalifikację leada.</p>
             <div class="chips"><span>Lead gen</span><span>MailerLite</span><span>ScoreApp</span></div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project p3">
-          <div class="project-media">
-            <img src="assets/project-brand.svg" alt="Wizualizacja brandingu HRscore i CSP">
-          </div>
-          <div class="project-copy">
+          <article class="project">
+            <div class="project-icon">
+              <svg viewBox="0 0 64 64" fill="none"><circle cx="26" cy="30" r="16" fill="#C05B36" opacity=".85"/><circle cx="40" cy="34" r="16" fill="#44AD84" opacity=".85"/></svg>
+            </div>
             <span class="project-no">03</span>
             <h3>Dwie marki, jeden system</h3>
-            <p>Identyfikacja, tone of voice, materiały marketingowe i komunikacja HRscore oraz CSP.</p>
+            <p>Identyfikacja wizualna, tone of voice i materiały marketingowe HRscore oraz CSP — spójne, choć to różne charaktery.</p>
             <div class="chips"><span>Branding</span><span>Copywriting</span><span>Design</span></div>
-          </div>
-        </article>
+          </article>
 
-        <article class="project p4">
-          <div class="project-media">
-            <img src="assets/project-knowledge.svg" alt="Wizualizacja bazy wiedzy HRscore">
-          </div>
-          <div class="project-copy">
+          <article class="project">
+            <div class="project-icon">
+              <svg viewBox="0 0 64 64" fill="none"><rect x="12" y="14" width="40" height="9" rx="3" stroke="#C05B36" stroke-width="2.5"/><rect x="12" y="28" width="40" height="9" rx="3" stroke="#C05B36" stroke-width="2.5"/><rect x="12" y="42" width="40" height="9" rx="3" fill="#44AD84"/></svg>
+            </div>
             <span class="project-no">04</span>
-            <h3>Baza wiedzy</h3>
-            <p>Strategia contentowa, pillar pages i rozbudowa eksperckiej bazy wiedzy.</p>
+            <h3>Baza wiedzy, która nie kurzy się na półce</h3>
+            <p>Strategia contentowa i architektura informacji, dzięki której artykuły faktycznie ktoś czyta — nie tylko publikuje.</p>
             <div class="chips"><span>SEO</span><span>Content strategy</span><span>UX writing</span></div>
-          </div>
-        </article>
+          </article>
+
+        </div>
       </div>
     </section>
 
-    <section class="about-me" id="about">
-      <div class="section-title">
-        <span>03</span>
-        <h2>O mnie</h2>
-      </div>
-
-      <div class="about-layout">
-        <div class="about-text">
+    <!-- ============ ABOUT ============ -->
+    <section class="about" id="about">
+      <div class="wrap about-grid">
+        <div class="section-title">
+          <span>02</span>
+          <div><h2>O mnie</h2></div>
+        </div>
+        <div class="about-body">
           <p class="lead">Marketing traktuję jak rzemiosło. Z wykształcenia jestem edytorką (filologia polska, edytorstwo) — i chyba stąd bierze się to, jak bardzo zależy mi na tym, żeby treść i struktura miały sens, nie tylko dobrze wyglądały.</p>
-          <p>Poza pracą ręcznie rysuję mapy światów fantasy — w tym, w pewnym sensie, tę, po której poruszasz się na tej stronie. Kontury i trasy, które widziałaś/eś wyżej, zanim trafiły do przeglądarki, zaczynały się od ołówka i kalki.</p>
-        </div>
-        <div class="chips about-tags">
-          <span>Marketing B2B</span><span>Content</span><span>WordPress</span><span>Employer Branding</span>
+          <p>Lubię pracować projektowo: od zrozumienia problemu, przez konkretne rozwiązanie, po wdrożenie i sprawdzenie, czy zadziałało. Po godzinach gram w RPG, układam puzzle i rysuję mapy fantastycznych światów — chyba w jednym i drugim pociąga mnie to samo: robienie porządku z chaosu.</p>
+          <div class="chips about-tags">
+            <span>Marketing B2B</span><span>Content</span><span>WordPress</span><span>Employer Branding</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="route-section" id="route">
-      <div class="section-title light">
-        <span>04</span>
-        <h2>Trasa doświadczenia</h2>
-      </div>
-
-      <div class="route-layout">
-        <div class="route-visual">
-          <svg viewBox="0 0 600 1100" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
-            <path class="route-bg" d="M110 1020 C70 860, 300 860, 235 700
-              S75 540, 250 430
-              S500 315, 390 145"/>
-            <path class="route-progress" d="M110 1020 C70 860, 300 860, 235 700
-              S75 540, 250 430
-              S500 315, 390 145"/>
-            <circle class="node n1" cx="110" cy="1020" r="13"/>
-            <circle class="node n2" cx="235" cy="700" r="13"/>
-            <circle class="node n3" cx="250" cy="430" r="13"/>
-            <circle class="node n4" cx="390" cy="145" r="13"/>
-          </svg>
-          <div class="route-caption">2019 → 2026</div>
+    <!-- ============ EXPERIENCE ============ -->
+    <section class="exp-section" id="exp">
+      <div class="wrap">
+        <div class="section-title">
+          <span>03</span>
+          <div><h2>Doświadczenie</h2></div>
         </div>
 
         <div class="accordion">
-          <article class="exp-item open" data-node="n4">
+          <article class="exp-item open">
             <button class="exp-head">
-              <span class="exp-date">2024 — NOW</span>
+              <span class="exp-date">2024 — teraz</span>
               <span class="exp-role">Specjalistka ds. Marketingu i Employer Brandingu</span>
               <span class="exp-toggle">−</span>
             </button>
             <div class="exp-body"><div class="exp-body-inner">
               <p class="company">Telekadra Poland / HRscore</p>
-              <p>Rozwój stron, landing page’y, content, e-mail marketing, lead generation, employer branding i komunikacja dwóch marek.</p>
+              <p>Rozwój stron, landing page'y, content, e-mail marketing, lead generation, employer branding i komunikacja dwóch marek.</p>
               <div class="exp-tags"><span>WEB</span><span>CONTENT</span><span>BRAND</span></div>
             </div></div>
           </article>
 
-          <article class="exp-item" data-node="n3">
+          <article class="exp-item">
             <button class="exp-head">
               <span class="exp-date">2022 — 2024</span>
               <span class="exp-role">Specjalistka ds. HR</span>
@@ -224,7 +161,7 @@
             </div></div>
           </article>
 
-          <article class="exp-item" data-node="n2">
+          <article class="exp-item">
             <button class="exp-head">
               <span class="exp-date">2021 — 2022</span>
               <span class="exp-role">Specjalistka ds. Marketingu</span>
@@ -237,7 +174,7 @@
             </div></div>
           </article>
 
-          <article class="exp-item" data-node="n1">
+          <article class="exp-item">
             <button class="exp-head">
               <span class="exp-date">2019 — 2021</span>
               <span class="exp-role">Asystentka ds. Kadr i Administracji</span>
@@ -253,62 +190,44 @@
       </div>
     </section>
 
+    <!-- ============ SKILLS ============ -->
     <section class="skills">
-      <div class="section-title">
-        <span>05</span>
-        <h2>Kompetencje</h2>
-      </div>
-
-      <div class="skills-marquee" aria-hidden="true">
-        <div class="skills-track">
-          <span>WORDPRESS</span><span>ELEMENTOR</span><span>CONTENT</span><span>EMAIL MARKETING</span>
-          <span>LEAD GENERATION</span><span>EMPLOYER BRANDING</span><span>COPYWRITING</span><span>CLARITY</span>
-          <span>WORDPRESS</span><span>ELEMENTOR</span><span>CONTENT</span><span>EMAIL MARKETING</span>
-          <span>LEAD GENERATION</span><span>EMPLOYER BRANDING</span><span>COPYWRITING</span><span>CLARITY</span>
+      <div class="wrap">
+        <div class="section-title">
+          <span>04</span>
+          <div>
+            <h2>Kompetencje</h2>
+            <p class="section-sub">Rzeczy, które robię dobrze i lubię o nich mówić.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="skills-grid">
-        <article>
-          <h3>WEB / CMS</h3>
-          <p>WordPress, Elementor, landing page’e, publikacja treści, podstawy UX i HTML/CSS.</p>
-        </article>
-        <article>
-          <h3>DIGITAL</h3>
-          <p>Content, lead generation, e-mail marketing, komunikacja B2B i działania wspierające sprzedaż.</p>
-        </article>
-        <article>
-          <h3>MARKA</h3>
-          <p>Employer branding, copywriting, komunikacja wewnętrzna, identyfikacja i materiały marketingowe.</p>
-        </article>
-        <article>
-          <h3>ANALITYKA</h3>
-          <p>GA4 na poziomie podstawowym, Microsoft Clarity, Senuto i rekomendacje optymalizacyjne.</p>
-        </article>
+        <div class="skills-grid">
+          <article><h3>WEB / CMS</h3><p>WordPress, Elementor, landing page'y, publikacja treści, podstawy UX i HTML/CSS.</p></article>
+          <article><h3>DIGITAL</h3><p>Content, lead generation, e-mail marketing, komunikacja B2B i działania wspierające sprzedaż.</p></article>
+          <article><h3>MARKA</h3><p>Employer branding, copywriting, komunikacja wewnętrzna, identyfikacja i materiały marketingowe.</p></article>
+          <article><h3>ANALITYKA</h3><p>GA4 na poziomie podstawowym, Microsoft Clarity, Senuto i rekomendacje optymalizacyjne.</p></article>
+        </div>
       </div>
     </section>
 
+    <!-- ============ CONTACT ============ -->
     <section class="contact" id="contact">
-      <svg class="contact-contours" viewBox="0 0 1600 700" preserveAspectRatio="none" aria-hidden="true">
-        <path d="M-60 150 C250 20, 520 60, 750 220 S1170 390, 1650 130"/>
-        <path d="M-40 250 C260 120, 540 150, 780 310 S1200 470, 1650 230"/>
-        <path d="M-20 360 C290 220, 560 260, 800 420 S1220 580, 1660 340"/>
-        <path d="M0 480 C310 350, 580 390, 830 540 S1250 680, 1680 470"/>
-      </svg>
-      <div class="contact-inner">
-        <span class="contact-small">STWÓRZMY COŚ Z KIERUNKIEM</span>
-        <h2>Potrzebujesz trasy?<br>Narysujmy ją.</h2>
+      <div class="wrap contact-inner">
+        <span class="contact-small">OSTATNIA SEKCJA, OBIECUJĘ</span>
+        <h2>Masz projekt?<br>Ja mam klawiaturę.</h2>
         <div class="contact-links">
           <a href="mailto:malgorzata.klimczuk@gmail.com">malgorzata.klimczuk@gmail.com ↗</a>
           <a href="tel:+48514254283">+48 514 254 283 ↗</a>
         </div>
       </div>
     </section>
+
   </main>
 
   <footer>
     <span>© <span id="year"></span> MAŁGORZATA KLIMCZUK</span>
     <span>KRAKÓW / PL</span>
   </footer>
+
 </body>
 </html>
