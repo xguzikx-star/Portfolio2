@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 780">
+<rect width="1000" height="780" fill="#d8b9a3"/>
+<rect x="70" y="70" width="270" height="620" rx="28" fill="#f3e8de"/>
+<rect x="365" y="70" width="270" height="620" rx="28" fill="#17191c"/>
+<rect x="660" y="70" width="270" height="620" rx="28" fill="#f3e8de"/>
+<text x="110" y="160" font-family="Georgia" font-size="44" fill="#111315">Recruitment</text>
+<text x="110" y="205" font-family="Georgia" font-size="44" fill="#111315">Process</text>
+<text x="415" y="160" font-family="Georgia" font-size="40" fill="#f3e8de">HR Analytics</text>
+<text x="710" y="160" font-family="Georgia" font-size="42" fill="#111315">Quality</text>
+<text x="710" y="205" font-family="Georgia" font-size="42" fill="#111315">of Hire</text>
+<path d="M420 420 C490 310,560 480,610 360" fill="none" stroke="#c77659" stroke-width="4" stroke-dasharray="7 12"/>
+</svg>

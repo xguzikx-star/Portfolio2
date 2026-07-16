@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720">
+<rect width="900" height="720" fill="#101214"/>
+<rect x="70" y="70" width="330" height="250" rx="28" fill="#f1e5da"/>
+<text x="235" y="225" text-anchor="middle" font-family="Georgia" font-size="100" fill="#111315">HR</text>
+<rect x="500" y="70" width="330" height="250" rx="28" fill="#332521"/>
+<text x="665" y="225" text-anchor="middle" font-family="Georgia" font-size="88" fill="#f1e5da">CSP</text>
+<rect x="70" y="400" width="200" height="190" rx="24" fill="#8f4e3a"/>
+<rect x="300" y="400" width="200" height="190" rx="24" fill="#d8b9a3"/>
+<rect x="530" y="400" width="300" height="190" rx="24" fill="#5d3328"/>
+<path d="M88 650 C210 610,300 680,410 630 S640 560,805 620" fill="none" stroke="#c77659" stroke-width="3" stroke-dasharray="8 12"/>
+</svg>

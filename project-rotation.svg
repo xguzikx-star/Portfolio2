@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 720">
+<rect width="900" height="720" fill="#8f4e3a"/>
+<rect x="64" y="62" width="772" height="596" rx="36" fill="rgba(255,255,255,.12)" stroke="rgba(255,255,255,.28)"/>
+<text x="120" y="165" fill="#f3e8de" font-family="Arial" font-size="62" font-weight="700">ROTATION COST</text>
+<text x="120" y="245" fill="#f3e8de" font-family="Arial" font-size="44">182 400 PLN</text>
+<rect x="120" y="310" width="220" height="16" rx="8" fill="rgba(255,255,255,.5)"/>
+<rect x="120" y="340" width="300" height="16" rx="8" fill="rgba(255,255,255,.28)"/>
+<path d="M115 540 C220 450,320 610,430 515 S630 420,760 540" fill="none" stroke="#f3e8de" stroke-width="5" stroke-dasharray="7 12"/>
+<circle cx="115" cy="540" r="10" fill="#f3e8de"/>
+<circle cx="430" cy="515" r="10" fill="#d8b9a3"/>
+<circle cx="760" cy="540" r="10" fill="#f3e8de"/>
+</svg>
